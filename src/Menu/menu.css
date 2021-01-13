@@ -1,0 +1,22 @@
+.navBar{
+    background-color:purple;
+    display:block;
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    max-width: 10em;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navBar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.navBar img{
+    margin-top: 1em;
+    width: 130px;
+    height: 150px;
+    border-radius: 50%;
+}
