@@ -1,10 +1,12 @@
 import React from 'react';
+import './Information.css';
 
 const information = (props) =>{
     return(
-       <div>
-           <h1>{props.name}</h1>
-           <p>{props.interests}</p>
+       <div className='information'>
+           <h1>{props.title}</h1>
+           <p>{props.par}</p>
+           {props.children}
        </div> 
     );
 }

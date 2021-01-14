@@ -1,0 +1,86 @@
+.navBar{
+    background-color:#4484CE;
+    display:block;
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    max-width: 10em;
+    overflow: hidden;
+    text-align: center;
+    padding: 1em;
+    box-shadow:5px 0px 5px rgba(0,0,0,0.2);
+}
+
+
+.navBar h3{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    margin-top: 0.3em;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+.navBar ul{
+    list-style-type: none;
+    padding: 0;
+    color:white;
+}
+.navBar ul li{
+    margin-bottom: 1em;
+    cursor: pointer;
+    padding: 0.3em;
+}
+.navBar ul li p{
+    display: inline;
+}
+.navBar ul li:hover{
+    color: #F9CF00;
+    border: 1px solid white;
+}
+
+.navBar img{
+    margin-top: 1em;
+    width: 130px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.3);
+}
+@media only screen and (min-width: 320px) and (max-width: 900px){
+    
+    .navBar{
+        height: 5em;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+        display:flex;
+        text-align: inherit;
+        padding: 0em;
+        box-shadow:0px 5px 5px rgba(0,0,0,0.2);
+    }
+    .navBar h3{
+        display: none;
+    }
+    .navBar img{
+        margin-top: 0.5em;
+        width: 50px;
+        height: 50px;
+        margin-left: 2em;
+        border-width: 3px;
+    }
+    .navBar ul{
+        list-style-type: none;
+        padding: 0;
+        margin-left: 2em;
+    }
+    .navBar ul li{
+        display: inline;
+        padding: 0.3em;
+        font-size: 30px;
+        margin-right: 1em;
+    }
+    .navBar ul li p{
+        display: none;
+    }
+    
+}
