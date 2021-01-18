@@ -1,5 +1,119 @@
-.project{
-    display: block;
-    margin-left: 10em;
-    padding: 1em;
+.project {
+  display: inline-block;
+  position: inherit;
+  margin: 0em 0 0 13em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: fit-content;
+  width: 80%;
+  background-color: white;
+}
+.project .imagesContainer img {
+  width: 80%;
+  height: 150px;
+  margin: 0.3em auto;
+  cursor: pointer;
+}
+.project .imagesContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+/*Preview*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Expandir imagen pp */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  background-size: cover;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+  .project {
+    position: relative;
+    margin: 0.1em auto;
+  }
+  .project .imagesContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .modal {
+    z-index: 2;
+  }
 }

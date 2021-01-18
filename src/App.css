@@ -2,3 +2,27 @@
     width: 100%;
     height: 100%;
 }
+aside{
+    position: fixed;
+    height: 100%;
+    width: fit-content;
+}
+main{
+    display: grid;
+    grid-template-columns: auto;
+}
+@media only screen and (min-width: 320px) and (max-width: 900px){
+    .App{
+        overflow-x: hidden;
+    }
+    aside{
+        width: 100%;
+        height: fit-content;
+        z-index: 1;
+    }
+    main{
+        position: flex;
+        margin-top: 5em;
+        width: 100%;
+    }
+}

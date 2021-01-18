@@ -1,11 +1,9 @@
 .navBar{
     background-color:#4484CE;
-    display:block;
-    position: absolute;
+    position: inherit;
     height: 100%;
-    width: 15%;
+    width: 10em;
     max-width: 10em;
-    overflow: hidden;
     text-align: center;
     padding: 1em;
     box-shadow:5px 0px 5px rgba(0,0,0,0.2);
